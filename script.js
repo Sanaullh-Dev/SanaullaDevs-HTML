@@ -1,26 +1,22 @@
-import Typewriter from 'typewriter-effect/dist/core';
-
-var app = document.getElementById('app');
-
-var typewriter = new Typewriter(app, {
-  loop: true,
-  delay: 75,
-});
-
-typewriter
-  .pauseFor(2500)
-  .typeString('A simple yet powerful native javascript')
-  .pauseFor(300)
-  .deleteChars(10)
-  .typeString('<strong>JS</strong> plugin for a cool typewriter effect and ')
-  .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
-  .pauseFor(1000)
-  .start();
-
-// $(function(){
-
- 
+(function() {
+  "use strict";
 
 
+  /**
+   * Hero type effect
+   */
+   const typed = select('.typed')
+   if (typed) {
+     let typed_strings = typed.getAttribute('data-typed-items')
+     typed_strings = typed_strings.split(',')
+     new Typed('.typed', {
+       strings: typed_strings,
+       loop: true,
+       typeSpeed: 100,
+       backSpeed: 50,
+       backDelay: 2000
+     });
+   }
+   
 
-//   });
+})()
