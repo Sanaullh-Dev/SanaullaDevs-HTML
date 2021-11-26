@@ -18,13 +18,15 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
     <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
     <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
     <!-- <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+
 </head>
 
 <body>
-
+    <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container container-fluid container-xl d-flex align-content-center justify-content-between ">
             <div class="logo d-flex align-items-center">
@@ -48,8 +50,7 @@
                 <i class="bx bxl-twitter"></i>
             </div>
         </div>
-    </header>
-
+    </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero d-flex align-items-center">
@@ -78,7 +79,7 @@
         </div>
     </section><!-- End Hero -->
 
-
+    <!-- ======= Main ======= -->
     <div id="main">
 
         <!-- --------------- About Me --------------- -->
@@ -454,105 +455,82 @@
         <!-- --------------- FAQ --------------- -->
         <section id="FAQ" class="faq">
             <div class="container">
+
                 <div class="row">
-                    <div class="col-lg-7">
-                        <div class="accordion accordion-flush" id="FAQ">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#FAQ1-content">
-                                        Accordion Item #1
-                                    </button>
-                                </h2>
-                                <div id="FAQ1-content" class="accordion-collapse collapse show" data-bs-parent="#FAQ">
-                                    <div class="accordion-body mt-2">
-                                        <strong>This is the first item's accordion body.</strong> It is shown by
-                                        default, until the collapse
-                                        plugin adds the appropriate classes that we use to style each element. These
-                                        classes control the
-                                        overall appearance, as well as the showing and hiding via CSS transitions. You
-                                        can modify any of this
-                                        with custom CSS or overriding our default variables. It's also worth noting that
-                                        just about any HTML
-                                        can go within the <code>.accordion-body</code>, though the transition does limit
-                                        overflow.
+                    <div class="col-lg-7 col-md-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Collapsible Group Item #1
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#FAQ2-content">
-                                        Accordion Item #2
-                                    </button>
-                                </h2>
-                                <div id="FAQ2-content" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-                                    <div class="accordion-body mt-2">
-                                        <strong>This is the first item's accordion body.</strong> It is shown by
-                                        default, until the collapse
-                                        plugin adds the appropriate classes that we use to style each element. These
-                                        classes control the
-                                        overall appearance, as well as the showing and hiding via CSS transitions. You
-                                        can modify any of this
-                                        with custom CSS or overriding our default variables. It's also worth noting that
-                                        just about any HTML
-                                        can go within the <code>.accordion-body</code>, though the transition does limit
-                                        overflow.
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Collapsible Group Item #2
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#FAQ3-content">
-                                        Accordion Item #3
-                                    </button>
-                                </h2>
-                                <div id="FAQ3-content" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-                                    <div class="accordion-body mt-2">
-                                        <strong>This is the first item's accordion body.</strong> It is shown by
-                                        default, until the collapse
-                                        plugin adds the appropriate classes that we use to style each element. These
-                                        classes control the
-                                        overall appearance, as well as the showing and hiding via CSS transitions. You
-                                        can modify any of this
-                                        with custom CSS or overriding our default variables. It's also worth noting that
-                                        just about any HTML
-                                        can go within the <code>.accordion-body</code>, though the transition does limit
-                                        overflow.
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Collapsible Group Item #3
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#FAQ4-content">
-                                        Accordion Item #4
-                                    </button>
-                                </h2>
-                                <div id="FAQ4-content" class="accordion-collapse collapse" data-bs-parent="#FAQ">
-                                    <div class="accordion-body mt-2">
-                                        <strong>This is the first item's accordion body.</strong> It is shown by
-                                        default, until the collapse
-                                        plugin adds the appropriate classes that we use to style each element. These
-                                        classes control the
-                                        overall appearance, as well as the showing and hiding via CSS transitions. You
-                                        can modify any of this
-                                        with custom CSS or overriding our default variables. It's also worth noting that
-                                        just about any HTML
-                                        can go within the <code>.accordion-body</code>, though the transition does limit
-                                        overflow.
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
                         </div>
                     </div>
 
@@ -563,17 +541,15 @@
             </div>
 
         </section>
-    </div>
-
-
-
+    </div><!-- End Main -->
 
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
+
     <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>

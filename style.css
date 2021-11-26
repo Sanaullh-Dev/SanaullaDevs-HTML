@@ -1,297 +1,258 @@
 :root {
-    --background: #ffffff;
-    --textcolor: #012970;
-    --primary: #4154f1;
-    --primaryfocus: #5969f3;
-    --headingText: #929296;
-    --btnBg: #4154f1;
-    --foreground: #f6f9ff;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
-  
-  html,
-  body {
-    font-family: 'Comfortaa', cursive;
-    background-color: #fff;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4 {
-    padding: 0;
-    margin: 0;
-    font-family: 'Play', sans-serif;
-  }
-  
-  a , span {
-    font-family: 'Lato', sans-serif;
-  }
+  --background: #ffffff;
+  --textcolor: #012970;
+  --primary: #4154f1;
+  --primaryfocus: #5969f3;
+  --headingText: #929296;
+  --btnBg: #4154f1;
+  --foreground: #f6f9ff;
+}
 
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
+html,
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: #fff;
+}
 
-  /* #typit .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-  #typit  .container p {
-    font-size: 3rem;
-    padding: 0.5rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    overflow: hidden;
-  }
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Play', sans-serif;
+}
 
-
-  #typit  .container p span.typed-text {
-    font-weight: normal;
-    color: #dd7732;
-  }
-  #typit  .container p span.cursor {
-    display: inline-block;
-    background-color: #ccc;
-    margin-left: 0.1rem;
-    width: 3px;
-    animation: blink 1s infinite;
-  }
-  #typit  .container p span.cursor.typing {
-    animation: none;
-  }
-
-
-
-
-
-
-
+a,
+span {
+  font-family: 'Lato', sans-serif;
+}
 
 #header {
-    padding: 8px 0;
-    transition: all 0.5s ease;
-    position: fixed;
-    z-index: 997;
-    transition: all 0.5s;
-    background-color: white;
-    box-shadow: 0px 2px 20px rgba(77, 98, 134, 0.1);
-  }
-  
-  #header .logo .title {
-    margin: 0;
-  }
-  
-  #header .logo .title:hover {
-    color: #3498db;
-    cursor: pointer;
-  }
-  
-  #header img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  #header h1 {
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    white-space: nowrap;
-  }
-  
-  .menu-bar {
-    width: 70%;
-    padding: 0 20px;
-    padding-left: 25px;
-  }
-  
-  .menu-bar > ul {
-    /* background-color: blue; */
-    display: flex;
-    flex-wrap: nowrap;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 0;
-    position: relative;
-    list-style: none;
-  }
-  
-  .menu-bar > ul > li {
-    white-space: nowrap;
-    position: relative;
-  }
-  
-  .menu-bar li a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
-    position: relative;
-    /* border-bottom: red 1px solid; */
-  }
-  
-  .menu-bar ul li a:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -1px;
-    left: 0;
-    background-color: #3498db;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
-  
-  .menu-bar ul li a:hover:before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
-  
-  #header .social-media {
-    /* background-color: aqua; */
-    display: flex;
-  }
-  
-  #header .social-media i {
-    font-size: 25px;
-    color: #4d555a;
-    padding: auto 6px;
-    margin: auto 5px;
-    transition: all 0.3s ease;
-  }
-  
-  #header .social-media i:hover {
-    transform: scale(1.2);
-  }
-  #header .social-media i:hover.bxl-facebook-circle {
-    color: #3b5998;
-  }
-  
-  #header .social-media i:hover.bxl-twitter {
-    color: #1da1f2;
-  }
-  
-  #header .social-media i:hover.bxl-linkedin {
-    color: #2867b2;
-  }
-  
-  .hero {
-    height: 100vh;
-    width: 100%;
-    background-color: #3498db;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    padding-top: 65px;
-  }
-  
-  .hero h2 {
-    font-size: 50px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  
-  .hero h1 {
-    font-size: 100px;
-    font-weight: bolder;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  
-  .hero h4 {
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
-  .hero .btn-container a {
-    margin-right: 20px;
-    text-decoration: none;
-    padding: 15px 35px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
-  
-  .hero .btn-container .btn-works {
-    background-color: #000;
-    box-shadow: 0px 5px 25px rgba(254, 254, 255, 0.37);
-  }
-  
-  .hero .btn-container .btn-contact i {
-    font-size: 20px;
-    margin-left: 8px;
-  }
-  
-  .hero .btn-container .btn-contact:hover span {
-    text-decoration: underline;
-  }
-  
-  .hero .profile-img img {
-    width: 80%;
-    border-radius: 50%;
-    border: 15px solid rgb(255, 255, 255);
-    box-shadow: 0px 5px 25px rgba(254, 254, 255, 0.37);
-    float: right;
-  }
-  
-  /* ------------- Secation ---------------- */
-  #main section {
-    padding: 80px 0px;
-    overflow: hidden;
-  }
-  #main section .section-header {
-    text-align: center;
-    margin-bottom: 25px;
-    display: inline-block;
-  }
-  
-  #main section .section-header span {
-    font-size: 20px;
-    padding: 2px 18px;
-    background-color: #3498db;
-    color: #fff;
-    display: inline-block;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  
-  #main section .section-header p {
-    font-size: 50px;
-    font-weight: 700;
-    text-transform: capitalize;
-  }
-  
-  /* --------------- about Me ----------------- */
-  #about h3 {
-    font-size: 40px;
-  }
-  #about h3 span {
-    font-weight: 700;
-    border-bottom: 3px solid #3498db;
-  }
-  
-  #about .about-par p {
-    font-size: 25px;
-    line-height: 2;
-  }
-  
-  /* #about .h1-color {
+  padding: 8px 0;
+  transition: all 0.5s ease;
+  position: fixed;
+  z-index: 997;
+  transition: all 0.5s;
+  background-color: white;
+  box-shadow: 0px 2px 20px rgba(77, 98, 134, 0.1);
+}
+
+#header .logo .title {
+  margin: 0;
+}
+
+#header .logo .title:hover {
+  color: #3498db;
+  cursor: pointer;
+}
+
+#header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+#header h1 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.menu-bar {
+  width: 70%;
+  padding: 0 20px;
+  padding-left: 25px;
+}
+
+.menu-bar > ul {
+  /* background-color: blue; */
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  list-style: none;
+}
+
+.menu-bar > ul > li {
+  white-space: nowrap;
+  position: relative;
+}
+
+.menu-bar li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  /* border-bottom: red 1px solid; */
+}
+
+.menu-bar ul li a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  background-color: #3498db;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-bar ul li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+#header .social-media {
+  /* background-color: aqua; */
+  display: flex;
+}
+
+#header .social-media i {
+  font-size: 25px;
+  color: #4d555a;
+  padding: auto 6px;
+  margin: auto 5px;
+  transition: all 0.3s ease;
+}
+
+#header .social-media i:hover {
+  transform: scale(1.2);
+}
+#header .social-media i:hover.bxl-facebook-circle {
+  color: #3b5998;
+}
+
+#header .social-media i:hover.bxl-twitter {
+  color: #1da1f2;
+}
+
+#header .social-media i:hover.bxl-linkedin {
+  color: #2867b2;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #3498db;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 65px;
+}
+
+.hero h2 {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 100px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h4 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.hero .btn-container a {
+  margin-right: 20px;
+  text-decoration: none;
+  padding: 15px 35px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hero .btn-container .btn-works {
+  background-color: #000;
+  box-shadow: 0px 5px 25px rgba(254, 254, 255, 0.37);
+}
+
+.hero .btn-container .btn-contact i {
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.hero .btn-container .btn-contact:hover span {
+  text-decoration: underline;
+}
+
+.hero .profile-img img {
+  width: 80%;
+  border-radius: 50%;
+  border: 15px solid rgb(255, 255, 255);
+  box-shadow: 0px 5px 25px rgba(254, 254, 255, 0.37);
+  float: right;
+}
+
+/* ------------- Secation ---------------- */
+#main section {
+  padding: 80px 0px;
+  overflow: hidden;
+}
+#main section .section-header {
+  text-align: center;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+#main section .section-header span {
+  font-size: 20px;
+  padding: 2px 18px;
+  background-color: #3498db;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#main section .section-header p {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* --------------- about Me ----------------- */
+#about h3 {
+  font-size: 40px;
+}
+#about h3 span {
+  font-weight: 700;
+  border-bottom: 3px solid #3498db;
+}
+
+#about .about-par p {
+  font-size: 25px;
+  line-height: 2;
+}
+
+/* #about .h1-color {
     display: inline-block;
     
     border-radius: 50%;
@@ -299,366 +260,363 @@
     height: 100px;
     text-align: center;
   } */
-  
-  .featured-box {
-    box-sizing: border-box;
-    margin: auto;
-  }
-  
-  .featured-box .featured-box-icon {
-    background-color: #3498dbb7;
-    margin: 0 auto;
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .featured-box .featured-box-icon h4 {
-    font-size: 150px;
-    font-weight: 700;
-    margin-top: -10px;
-  }
-  
-  .featured-box p {
-    margin-top: 30px;
-    font-size: 25px;
-  }
-  .featured-box p span {
-    font-weight: 700;
-  }
-  
-  .about .info-group span {
-    font-size: 19px;
-    font-weight: 600;
-    color: #6c757d;
-    line-height: 1;
-    /* padding-bottom: 8px;
+
+.featured-box {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.featured-box .featured-box-icon {
+  background-color: #3498dbb7;
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-box .featured-box-icon h4 {
+  font-size: 150px;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+.featured-box p {
+  margin-top: 30px;
+  font-size: 25px;
+}
+.featured-box p span {
+  font-weight: 700;
+}
+
+.about .info-group span {
+  font-size: 19px;
+  font-weight: 600;
+  color: #6c757d;
+  line-height: 1;
+  /* padding-bottom: 8px;
     border-bottom: solid 1px #6c757d; */
-  }
-  
-  .about .info-group > p {
-    margin-top: 10px;
-    font-size: 19px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-  }
-  
-  /* --------------- Service ----------------- */
-  .service {
-    background-color: #f8f9fa;
-  }
-  .service .service-cont i {
-    font-size: 60px;
-    color: #3498db;
-    margin: 15px auto;
-  }
-  
-  .service .service-cont h4 {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 2;
-  }
-  
-  .service .service-cont p {
-    font-size: 20px;
-    color: #6c757d;
-  }
-  
-  /* ------------ Resume -------------- */
-  .resume .col-lg-6 > h4 {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-  }
-  
-  .resume .resume-cont {
-    border-left: solid 3px #3498db;
-    padding-left: 20px;
-  }
-  
-  .resume .resume-cont .point-box {
-    margin-bottom: 30px;
-    border-bottom: solid 2px #6c757d46;
-    height: 230px;
-    overflow: hidden;
-  }
-  
-  .resume .resume-cont .point-box:last-child {
-    border: none;
-  }
-  
-  .resume .resume-cont .point-box h2 {
-    font-size: 25px;
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
-  
-  .resume .resume-cont .point-box span {
-    font-size: 20px;
-    font-weight: 500;
-    color: #6c757d;
-    line-height: 2;
-  }
-  
-  .resume .resume-cont .point-box p {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.5;
-  }
-  
-  /* --------- MY Skills ----------------- */
-  
-  #my-skills h4 {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
-  
-  #my-skills .skill-box {
-    margin-bottom: 23px;
-  }
-  
-  #my-skills .skill-box p {
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    margin-bottom: 5px;
-  }
-  
-  #my-skills .btn-cv {
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 0.8px;
-    padding: 15px 30px;
-    border: solid 3px #4d555a;
-    text-decoration: none;
-    color: #4d555a;
-    width: auto;
-  }
-  
-  #my-skills .btn-cv:hover {
-    color: #fff;
-    background-color: #000;
-    border: solid 3px #000;
-    transition: all 0.5s ease;
-  }
-  
-  #my-skills a {
-    border: solid 2px red;
-  }
-  
-  #my-skills .progress {
-    height: 8px;
-  }
-  
-  #my-skills .progress .progress-bar {
-    background-color: #3498db;
-  }
-  
-  /* ---------------- protfolio ----------------- */
-  
-  .protfolio .protfolio-filter {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    padding: 2px 15px;
-    margin: auto;
-  }
-  
-  .protfolio-filter li a {
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1;
-    color: #4d555a;
-    margin: 0px 4px 8px 4px;
-    padding: 8px 20px 10px 20px;
-    /* border-bottom: solid 2px #3498db; */
-    position: relative;
-  }
-  
-  .protfolio-filter li a:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -1px;
-    left: 0;
-    background-color: #3498db;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
-  
-  .protfolio-filter li a.active:before,
-  .protfolio-filter li a:hover:before {
-    visibility: visible;
-    transform: scaleX(1);
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .protfolio .portfolio-box {
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .protfolio .portfolio-box img {
-    transition: all 0.5s ease-in-out;
-  }
-  .protfolio .portfolio-box:hover img {
-    /* filter: blur(1px);
+}
+
+.about .info-group > p {
+  margin-top: 10px;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* --------------- Service ----------------- */
+.service {
+  background-color: #f8f9fa;
+}
+.service .service-cont i {
+  font-size: 60px;
+  color: #3498db;
+  margin: 15px auto;
+}
+
+.service .service-cont h4 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.service .service-cont p {
+  font-size: 20px;
+  color: #6c757d;
+}
+
+/* ------------ Resume -------------- */
+.resume .col-lg-6 > h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.resume .resume-cont {
+  border-left: solid 3px #3498db;
+  padding-left: 20px;
+}
+
+.resume .resume-cont .point-box {
+  margin-bottom: 30px;
+  border-bottom: solid 2px #6c757d46;
+  height: 230px;
+  overflow: hidden;
+}
+
+.resume .resume-cont .point-box:last-child {
+  border: none;
+}
+
+.resume .resume-cont .point-box h2 {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.resume .resume-cont .point-box span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #6c757d;
+  line-height: 2;
+}
+
+.resume .resume-cont .point-box p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* --------- MY Skills ----------------- */
+
+#my-skills h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#my-skills .skill-box {
+  margin-bottom: 23px;
+}
+
+#my-skills .skill-box p {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+#my-skills .btn-cv {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  padding: 15px 30px;
+  border: solid 3px #4d555a;
+  text-decoration: none;
+  color: #4d555a;
+  width: auto;
+}
+
+#my-skills .btn-cv:hover {
+  color: #fff;
+  background-color: #000;
+  border: solid 3px #000;
+  transition: all 0.5s ease;
+}
+
+#my-skills a {
+  border: solid 2px red;
+}
+
+#my-skills .progress {
+  height: 8px;
+}
+
+#my-skills .progress .progress-bar {
+  background-color: #3498db;
+}
+
+/* ---------------- protfolio ----------------- */
+
+.protfolio .protfolio-filter {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  padding: 2px 15px;
+  margin: auto;
+}
+
+.protfolio-filter li a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  color: #4d555a;
+  margin: 0px 4px 8px 4px;
+  padding: 8px 20px 10px 20px;
+  /* border-bottom: solid 2px #3498db; */
+  position: relative;
+}
+
+.protfolio-filter li a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  background-color: #3498db;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.protfolio-filter li a.active:before,
+.protfolio-filter li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+  transition: all 0.5s ease-in-out;
+}
+
+.protfolio .portfolio-box {
+  overflow: hidden;
+  position: relative;
+}
+
+.protfolio .portfolio-box img {
+  transition: all 0.5s ease-in-out;
+}
+.protfolio .portfolio-box:hover img {
+  /* filter: blur(1px);
     -webkit-filter: blur(1px); */
-    transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .protfolio .portfolio-box::before {
-    content: '';
-    position: absolute;
-    background: rgba(0, 0, 0, 0.3);
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-    /* visibility: hidden; */
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .protfolio .portfolio-box:hover:before {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .protfolio .portfolio-box .protfolio-info {
-    visibility: hidden;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #fff;
-    z-index: 9;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 50px;
-    border-radius: 10px;
-  }
-  
-  .protfolio .portfolio-box .protfolio-info h4 {
-    font-size: 25px;
-    font-weight: 600;
-  }
-  
-  .protfolio .portfolio-box .protfolio-info p {
-    font-size: 18px;
-    font-weight: 500;
-  }
-  
-  .protfolio .portfolio-box .protfolio-info .protfolio-links a {
-    font-size: 35px;
-    font-family: 600;
-    color: #fff;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .protfolio .portfolio-box .protfolio-info .protfolio-links a:hover {
-    color: #3498db;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .protfolio .portfolio-box:hover .protfolio-info {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.7s ease-in-out;
-  }
-  
-  /* ---------Hire me --------------- */
-  .hire-me {
-    background:linear-gradient( rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)100%),url("../assets/hire-me.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    padding: 20px auto !important;
-  }
-  
-  .hire-me .hire-me-box {
-    padding: auto;
-    display: flex;
-    flex-direction: column;
-  
-  }
-  
-  .hire-me .hire-me-box h2 {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 700;
-    font-weight: 600;
-    margin-bottom: 30px;
-    display: block;
-  }
-  
-  .hire-me .hire-me-box a{
-    display: inline;
-    margin: auto;
-    margin-top: 15px;
-    padding: 15px 40px;
-    text-decoration: none;
-    background: #3498db;
-    color: #000;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-  }
-  
-  
-  
-  /* -------------F. A. Q. -------------------- */
-  .faq .accordion-collapse {
-    border: 0;
-  }
-  
-  .faq .accordion-item {
-    border-bottom: solid 0.5px #444444;
-  
-  }
-  
-  .faq .accordion-button {
-    padding: 15px 15px 20px 0;
-    font-weight: 600;
-    border: 0;
-    font-size: 18px;
-    color: #444444;
-    text-align: left;
-  }
-  .faq .accordion-button:focus {
-    box-shadow: none;
-    background: none;
-  }
-  
-  .faq .accordion-button:not(.collapsed) {
-    background: none;
-    color: #3498db;
-    border-bottom: 0;
-  }
-  
-  .faq .accordion-body {
-    padding: 0 0 25px 0;
-    border: 0;
-  }
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.protfolio .portfolio-box::before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.protfolio .portfolio-box:hover:before {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.protfolio .portfolio-box .protfolio-info {
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.protfolio .portfolio-box .protfolio-info h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.protfolio .portfolio-box .protfolio-info p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.protfolio .portfolio-box .protfolio-info .protfolio-links a {
+  font-size: 35px;
+  font-family: 600;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.protfolio .portfolio-box .protfolio-info .protfolio-links a:hover {
+  color: #3498db;
+  transition: all 0.3s ease-in-out;
+}
+
+.protfolio .portfolio-box:hover .protfolio-info {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.7s ease-in-out;
+}
+
+/* ---------Hire me --------------- */
+.hire-me {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6) 100%),
+    url('../assets/hire-me.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 20px auto !important;
+}
+
+.hire-me .hire-me-box {
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hire-me .hire-me-box h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  font-weight: 600;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.hire-me .hire-me-box a {
+  display: inline;
+  margin: auto;
+  margin-top: 15px;
+  padding: 15px 40px;
+  text-decoration: none;
+  background: #3498db;
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* -------------F. A. Q. -------------------- */
+/* .faq .accordion-collapse {
+  border: 0;
+}
+
+.faq .accordion-item {
+  border-bottom: solid 0.5px #444444;
+}
+
+.faq .accordion-button {
+  padding: 15px 15px 20px 0;
+  font-weight: 600;
+  border: 0;
+  font-size: 18px;
+  color: #444444;
+  text-align: left;
+}
+.faq .accordion-button:focus {
+  box-shadow: none;
+  background: none;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  background: none;
+  color: #3498db;
+  border-bottom: 0;
+}
+
+.faq .accordion-body {
+  padding: 0 0 25px 0;
+  border: 0;
+} */
