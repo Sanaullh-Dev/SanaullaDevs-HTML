@@ -1,29 +1,5 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>SanaullaDev</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="assets/icon.ico">
-    <link rel="stylesheet" href="style.css">
-
-
-    <!-- -------- Google Fonts --------------------- -->
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:wght@400;800&family=Play&display=swap"
-        rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
-    <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
-    <!-- <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
-</head>
-
 <body>
+
 
     <header id="header" class="fixed-top">
         <div class="container container-fluid container-xl d-flex align-content-center justify-content-between ">
@@ -52,12 +28,26 @@
 
 
     <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+            <h1>Alex Smith</h1>
+            <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+        </div>
+    </section><!-- End Hero -->
+
+
+
+    <!-- ------- hero ----------------- -->
     <section id="hero" class="hero d-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
                     <h2 class="title">Hi, I'm freelancer </h2>
-                    <h1><span class="typed" data-typed-items="Designer, Developer, Sanaulla"></span>
+                    <h1>
+                        <p>I'm <span class="typed"
+                                data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+
+                        <!-- <ngtypewriter [StringList]='list' [speed]='1000'></ngtypewriter> -->
                     </h1>
                     <h4>Based in Maharashtra , India</h4>
                     <div class="btn-container mt-4 d-flex justify-content-start">
@@ -72,12 +62,10 @@
                 <div class="col-lg-6 col-md-12 profile-img">
                     <img class="img-fluid" src="../assets/profile-img.jpg" alt="">
                 </div>
-
             </div>
-
         </div>
-    </section><!-- End Hero -->
 
+    </section>
 
     <div id="main">
 
@@ -134,7 +122,6 @@
             </div>
         </section>
 
-        <!-- --------------- Service --------------- -->
         <section id="service" class="service">
             <div class="container text-center">
                 <header class="section-header">
@@ -179,7 +166,6 @@
             </div>
         </section>
 
-        <!-- --------------- Resume --------------- -->
         <section id="resume" class="resume">
             <div class="container text-center">
                 <header class="section-header">
@@ -331,7 +317,7 @@
 
         </section>
 
-        <!-- --------------- Portfolio --------------- -->
+        <!-- ------------- portfolio ------------------------ -->
         <section id="portfolio" class="protfolio">
             <div class="container text-center">
                 <header class="section-header">
@@ -437,7 +423,7 @@
             </div>
         </section>
 
-        <!-- --------------- Hire Me --------------- -->
+        <!-- ----------- Hire Me --------------- -->
         <section id="hire-me" class="hire-me d-flex align-items-center">
             <div class="container ">
                 <div class="row text-center">
@@ -451,12 +437,15 @@
             </div>
         </section>
 
-        <!-- --------------- FAQ --------------- -->
+        <!-- --------------- FAQ ------------------- -->
         <section id="FAQ" class="faq">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
+
+
                         <div class="accordion accordion-flush" id="FAQ">
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -566,25 +555,32 @@
     </div>
 
 
+    <!-- templete link of ref -->
+    <!-- http://demo.harnishdesign.net/html/callum/index-standard-menu.html -->
+    <!-- http://demo.harnishdesign.net/?theme=Callum%20HTML -->
+
+    <!-- http://demo.harnishdesign.net/html/callum/index-standard-menu-image-parallax.html -->
 
 
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+    <script src="assets/js/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <!-- Template Main JS File -->
-    <script src="main.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
 </body>
-
-
-</html>
