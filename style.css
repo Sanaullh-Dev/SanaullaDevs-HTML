@@ -150,6 +150,23 @@ span {
   color: #2867b2;
 }
 
+#header .mobile-menu {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 990px) {
+  #header .menu-bar {
+    visibility: hidden;
+  }
+
+  #header .mobile-menu i {
+    font-size: 30px;
+  }
+}
+
+/* --------------------- Hero -------------------- */
+
 .hero {
   height: 100vh;
   width: 100%;
@@ -172,6 +189,7 @@ span {
   font-weight: bolder;
   letter-spacing: 2px;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .hero h4 {
@@ -179,6 +197,7 @@ span {
   font-weight: 500;
   letter-spacing: 1px;
 }
+
 .hero .btn-container a {
   margin-right: 20px;
   text-decoration: none;
@@ -208,7 +227,33 @@ span {
   border-radius: 50%;
   border: 15px solid rgb(255, 255, 255);
   box-shadow: 0px 5px 25px rgba(254, 254, 255, 0.37);
-  float: right;
+  /* padding-top: 5px; */
+}
+
+.hero .order-3 i {
+  font-size: 55px;
+}
+
+@media (min-width: 991px) {
+  .hero .profile-img {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media (max-width: 990px) {
+  .hero .profile-img {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+
+  .hero .profile-info {
+    text-align: center;
+  }
+  .hero .profile-info .btn-container {
+    justify-content: center !important;
+  }
 }
 
 /* ------------- Secation ---------------- */
@@ -589,34 +634,46 @@ span {
 }
 
 /* -------------F. A. Q. -------------------- */
-/* .faq .accordion-collapse {
-  border: 0;
+
+#FAQ {
+  background-color: #f8f9fa;
 }
 
-.faq .accordion-item {
-  border-bottom: solid 0.5px #444444;
+#FAQ .accordion .card {
+  border: none;
+  border-radius: 0;
+  border-bottom: 0.1px solid #dfe0e1;
+  position: relative;
+  background-color: transparent !important;
+  margin-bottom: 15px;
 }
 
-.faq .accordion-button {
-  padding: 15px 15px 20px 0;
-  font-weight: 600;
-  border: 0;
+#FAQ .accordion .card .card-header {
+  background-color: transparent !important;
+  padding-bottom: 15px;
+}
+
+#FAQ .accordion .card .faq-btn {
+  color: #909ba5;
   font-size: 18px;
-  color: #444444;
-  text-align: left;
-}
-.faq .accordion-button:focus {
-  box-shadow: none;
-  background: none;
-}
-
-.faq .accordion-button:not(.collapsed) {
-  background: none;
-  color: #3498db;
-  border-bottom: 0;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: none;
+  border: none !important;
+  background: transparent;
+  cursor: pointer;
 }
 
-.faq .accordion-body {
-  padding: 0 0 25px 0;
-  border: 0;
-} */
+#FAQ .accordion .card .card-header h2[aria-expanded='true'] {
+  color: #000;
+}
+
+#FAQ .accordion .card .collapsed {
+  color: #909ba5;
+}
+
+#FAQ .accordion .card .card-body {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2;
+}

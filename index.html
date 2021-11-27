@@ -33,6 +33,7 @@
                 <img src="../assets/logo.png" alt="Logo">
                 <h1 class="title">Sanaulla</h1>
             </div>
+
             <nav id="manu-bar" class="menu-bar">
                 <ul>
                     <li><a class="nav-link" href="#home">Home</a></li>
@@ -49,15 +50,26 @@
                 <i class='bx bxl-linkedin'></i>
                 <i class="bx bxl-twitter"></i>
             </div>
+
+            <div class="mobile-menu">
+                <i class='bx bx-menu'></i>
+            </div>
         </div>
-    </header><!-- End Header -->
+    </header>
+
+    <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
-                    <h2 class="title">Hi, I'm freelancer </h2>
+
+                <div class="col-lg-6 order-1 order-lg-2 profile-img">
+                    <img class="img-fluid" src="../assets/profile-img.jpg" alt="">
+                </div>
+
+                <div class="col-lg-6 order-2 order-lg-1 profile-info d-flex flex-column justify-content-center">
+                    <h2>Hi, I'm freelancer </h2>
                     <h1><span class="typed" data-typed-items="Designer, Developer, Sanaulla"></span>
                     </h1>
                     <h4>Based in Maharashtra , India</h4>
@@ -69,10 +81,11 @@
                         </a>
                     </div>
                 </div>
-
-                <div class="col-lg-6 col-md-12 profile-img">
-                    <img class="img-fluid" src="../assets/profile-img.jpg" alt="">
+                <div class="col-lg-12 order-3 text-center">
+                    <p>Silde Down</p>
+                    <i class='bx bx-chevrons-down bx-fade-down'></i>
                 </div>
+
 
             </div>
 
@@ -455,82 +468,71 @@
         <!-- --------------- FAQ --------------- -->
         <section id="FAQ" class="faq">
             <div class="container">
+                <header class="section-header text-start">
+                    <span>FAQ</span>
+                    <p>Have any questions?</p>
+                </header>
 
                 <div class="row">
                     <div class="col-lg-7 col-md-12">
-                        <div class="accordion" id="accordionExample">
+                        <div class="accordion" id="FAQ">
+
                             <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Collapsible Group Item #1
-                                        </button>
+                                <div class="card-header border-0" id="FAQ-1">
+                                    <h2 class="mb-0 faq-btn" data-toggle="collapse" data-target="#collapse1"
+                                        aria-expanded="true">
+                                        <i class='bx bxs-chevron-down'></i>
+                                        Collapsible Group Item #1
+
                                     </h2>
                                 </div>
 
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample">
+                                <div id="collapse1" class="collapse show" aria-labelledby="FAQ-1" data-parent="#FAQ">
                                     <div class="card-body">
                                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        richardson r farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header border-0" id="FAQ-2">
+                                    <h2 class="mb-0 faq-btn" data-toggle="collapse" data-target="#collapse2">
+                                        <i class='bx bxs-chevron-down'></i>
+                                        Collapsible Group Item #1
+
+                                    </h2>
+                                </div>
+
+                                <div id="collapse2" class="collapse" aria-labelledby="FAQ-2" data-parent="#FAQ">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson r farm-to-table, raw denim aesthetic synth nesciunt
                                         you probably haven't heard of them accusamus labore sustainable VHS.
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            Collapsible Group Item #2
-                                        </button>
+                                <div class="card-header border-0" id="FAQ-3">
+                                    <h2 class="mb-0 faq-btn" data-toggle="collapse" data-target="#collapse3">
+                                        <i class='bx bxs-chevron-down'></i>
+                                        Collapsible Group Item #1
+
                                     </h2>
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample">
+
+                                <div id="collapse3" class="collapse" aria-labelledby="FAQ-3" data-parent="#FAQ">
                                     <div class="card-body">
                                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        richardson r farm-to-table, raw denim aesthetic synth nesciunt
                                         you probably haven't heard of them accusamus labore sustainable VHS.
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                            Collapsible Group Item #3
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                        you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
-                            </div>
+
+
+
                         </div>
                     </div>
 
