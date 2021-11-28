@@ -683,3 +683,15 @@ span {
   font-weight: 500;
   line-height: 2;
 }
+
+
+
+/* -------------- Testimonial ------------ */
+.testimonial {
+  background-color: #939597;
+}
+
+.testimonial .section-header p {
+  color: #fff;
+  font-size: 38px !important;
+}
