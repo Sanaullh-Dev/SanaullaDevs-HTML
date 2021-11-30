@@ -828,30 +828,33 @@ span {
   letter-spacing: 0.5px;
 }
 
-.contact .contact-form .form-group input {
+.contact .contact-form .form-group input,
+.contact .contact-form .form-group textarea {
   background-color: transparent;
   border: none;
   border-radius: 0;
-  border-bottom: solid 1px #000;
   outline: none;
+  padding: 0 0 8px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  box-shadow:none !important;
 }
 
 .contact .contact-form .form-group input:focus,
-.contact .contact-form .form-group input::selection {
-  outline: yellow !important;
-  border-width: 0 !important;
-  -webkit-appearance: none;
-  /* border-bottom: solid 2px #000; */
-  -webkit-appearance: none;
-  appearance: none;
-
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-  border-bottom: solid 1px #000;
-  outline: none;
+.contact .contact-form .form-group textarea:focus {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.993);
 }
 
-.no-outline:focus {
-  outline: none;
+.contact .contact-form button.submit {
+  background-color: #3498db;
+  color: #fff;
+  border-color: none;
+  box-shadow: none !important;
+  padding: 10px 40px;
 }
+
+.contact .contact-form button.submit  i {
+  font-size: 25px;
+  margin: auto;
+}
+
+

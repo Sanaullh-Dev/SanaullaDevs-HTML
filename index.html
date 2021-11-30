@@ -477,7 +477,7 @@
                 </header>
 
                 <div class="row">
-                    <div class="col-lg-8 order-2 col-md-12 d-flex align-items-cente">
+                    <div class="col-lg-8 order-lg-1 order-md-2 col-md-12 d-flex align-items-cente">
                         <div class="accordion mt-auto mb-auto" id="FAQ">
 
                             <div class="card">
@@ -564,7 +564,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 order-1 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-4 order-lg-2 order-md-1 d-flex align-items-center justify-content-center">
                         <img src="./assets/faq.png" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -685,19 +685,25 @@
                         <form class="d-flex flex-column justify-content-start">
                             <div class="form-group mb-3">
                                 <label class="mb-2" for="InputName">What is Your Name:</label>
-                                <input type="text" class="form-control no-outline" id="InputName"
-                                    placeholder="Enter Your Name">
+                                <input type="text" class="form-control" name="name" 
+                                id="Name" placeholder="Enter Your Name" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label class="mb-2" for="InputEmail">Email address</label>
-                                <input type="email" class="form-control" id="InputEmail" placeholder="name@example.com">
+                                <input type="email" class="form-control" name="email"
+                                 id="Email" placeholder="name@example.com" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label class="mb-2" for="Textarea1">How can I Help you?:</label>
                                 <textarea class="form-control" id="Textarea1" rows="3"></textarea>
                             </div>
                             <div>
-                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                <button type="submit" class="btn submit rounded-0">
+                                    Submit 
+                                    <span class="ms-3 m-auto">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                    </span>
+                                </button>
                             </div>
                         </form>
                     </div>
