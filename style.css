@@ -684,6 +684,10 @@ span {
   line-height: 2;
 }
 
+#FAQ img {
+  max-height: 350px;
+}
+
 /* -------------- Testimonial ------------ */
 .testimonial {
   background-color: #939597;
@@ -787,28 +791,28 @@ span {
   border: solid 2px #3498db;
 }
 
-
-
 /* ------------ Contact -------------- */
 .contact {
   background-image: linear-gradient(180deg, #3498db, #81b3d4);
 }
 .contact .contact-info {
   padding-right: 30px;
-}
-.contact .contact-info p {
- margin-top: 35px;
- font-size: 25px;
- line-height: 1.5;
- letter-spacing: 1;
+  margin-bottom: 25px;
 }
 
-.contact .contact-info h4{
+.contact .contact-info p {
+  margin-top: 35px;
+  font-size: 25px;
+  line-height: 1.5;
+  letter-spacing: 1;
+}
+
+.contact .contact-info h4 {
   font-weight: 600;
   margin-bottom: 0;
 }
 
-.contact .contact-info span{
+.contact .contact-info span {
   font-size: 20px;
   font-weight: 500;
   display: block;
@@ -816,5 +820,38 @@ span {
 }
 
 .contact .contact-form {
-  padding-left: 30px;
+  /* padding-left: 30px; */
+}
+
+.contact .contact-form .form-group label {
+  font-size: 19px;
+  letter-spacing: 0.5px;
+}
+
+.contact .contact-form .form-group input {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: solid 1px #000;
+  outline: none;
+}
+
+.contact .contact-form .form-group input:focus,
+.contact .contact-form .form-group input::selection {
+  outline: yellow !important;
+  border-width: 0 !important;
+  -webkit-appearance: none;
+  /* border-bottom: solid 2px #000; */
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: solid 1px #000;
+  outline: none;
+}
+
+.no-outline:focus {
+  outline: none;
 }
