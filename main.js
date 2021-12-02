@@ -1,9 +1,15 @@
 (function () {
   "use strict";
 
-  /**
-   * Easy selector helper function
-   */
+
+  // $('.tooltip-test').tooltip();
+
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+
+  /** * Easy selector helper function */
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
@@ -14,9 +20,7 @@
   }
 
 
-  /**
-   * Hero type effect
-   */
+  /** * Hero type effect  */
   const typed = select('.typed')
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
@@ -30,9 +34,7 @@
     });
   }
 
-  /**
-   * Animation on scroll
-   */
+  /** * Animation on scroll */
   window.addEventListener('load', () => {
     AOS.init({
       duration: 1000,
@@ -57,6 +59,7 @@
       prevEl: ".swiper-button-prev",
     },
   });
+
 
 
 })()

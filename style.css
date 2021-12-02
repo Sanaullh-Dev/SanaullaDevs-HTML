@@ -227,7 +227,6 @@ span {
   border-radius: 50%;
   border: 15px solid rgb(255, 255, 255);
   box-shadow: 0px 5px 25px rgba(254, 254, 255, 0.37);
-  /* padding-top: 5px; */
 }
 
 .hero .order-3 p {
@@ -363,11 +362,33 @@ span {
 /* --------------- Service ----------------- */
 .service {
   background-color: #f8f9fa;
+  /* background-color: #fff; */
 }
+
+.service .nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .service .service-cont i {
   font-size: 60px;
   color: #3498db;
   margin: 15px auto;
+}
+
+.service .service-cont {
+  background-color: #fff;
+  transition: all 0.9s ease;
+  padding: 15px 10px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.service .service-cont:hover {
+  color: #3498db;
+  /* border: solid 1px #3498db; */
+  box-shadow: 0px 10px 15px 10px #a4a7aa70;
+  transition: all 0.9s ease;
 }
 
 .service .service-cont h4 {
@@ -379,6 +400,7 @@ span {
 .service .service-cont p {
   font-size: 20px;
   color: #6c757d;
+  word-wrap: break-word;
 }
 
 /* ------------ Resume -------------- */
@@ -647,6 +669,7 @@ span {
 
 #FAQ .accordion .card {
   border: none;
+  display: block;
   border-radius: 0;
   border-bottom: 0.1px solid #dfe0e1;
   position: relative;
@@ -793,7 +816,7 @@ span {
 
 /* ------------ Contact -------------- */
 .contact {
-  background-image: linear-gradient(180deg, #3498db, #81b3d4);
+  background-image: linear-gradient(180deg, #3498db, #d49f81);
 }
 .contact .contact-info {
   padding-right: 30px;
@@ -819,8 +842,33 @@ span {
   padding-bottom: 15px;
 }
 
-.contact .contact-form {
-  /* padding-left: 30px; */
+.contact .contact-info .icon-link a {
+  font-size: 30px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.contact .contact-info .icon-link a:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.contact .contact-info .icon-link a:hover i.bxl-facebook-circle {
+  color: #4064ac;
+}
+
+.contact .contact-info .icon-link a:hover i.bxl-instagram {
+  color: #f4789a;
+}
+
+.contact .contact-info .icon-link a:hover i.bxl-twitter {
+  color: #1c9cea;
+}
+
+.contact .contact-info .icon-link a:hover i.bxl-dribbble {
+  color: #e24c86;
 }
 
 .contact .contact-form .form-group label {
@@ -836,7 +884,7 @@ span {
   outline: none;
   padding: 0 0 8px 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.12);
-  box-shadow:none !important;
+  box-shadow: none !important;
 }
 
 .contact .contact-form .form-group input:focus,
@@ -845,16 +893,25 @@ span {
 }
 
 .contact .contact-form button.submit {
-  background-color: #3498db;
+  background-color: #3b3b3b;
   color: #fff;
   border-color: none;
   box-shadow: none !important;
   padding: 10px 40px;
+  font-weight: 600;
 }
 
-.contact .contact-form button.submit  i {
+.contact .contact-form button.submit i {
   font-size: 25px;
-  margin: auto;
+  margin: 0 !important;
 }
 
+/* ------------- footer ---------------- */
+.footer-secation {
+  padding: 50px 0px;
+}
 
+.footer-secation p {
+  margin-bottom: 0 !important;
+  font-size: 18px;
+}
