@@ -74,7 +74,6 @@ span {
 }
 
 .menu-bar > ul {
-  /* background-color: blue; */
   display: flex;
   flex-wrap: nowrap;
   margin: auto;
@@ -101,7 +100,6 @@ span {
   font-size: 16px;
   font-weight: 600;
   position: relative;
-  /* border-bottom: red 1px solid; */
 }
 
 .menu-bar ul li a:before {
@@ -123,7 +121,6 @@ span {
 }
 
 #header .social-media {
-  /* background-color: aqua; */
   display: flex;
 }
 
@@ -189,7 +186,6 @@ span {
   font-weight: bolder;
   letter-spacing: 2px;
   text-transform: uppercase;
-  /* overflow: hidden; */
 }
 
 .hero h4 {
@@ -258,10 +254,10 @@ span {
   }
 
   .hero .profile-img img {
-  width: 40%;
-  border-radius: 50%;
-  border: 8px solid rgb(255, 255, 255);
-  box-shadow: 0px 5px 25px rgba(254, 254, 255, 0.37);
+    width: 40%;
+    border-radius: 50%;
+    border: 8px solid rgb(255, 255, 255);
+    box-shadow: 0px 5px 25px rgba(254, 254, 255, 0.37);
   }
 
   .hero .profile-info {
@@ -308,19 +304,16 @@ span {
   border-bottom: 3px solid #3498db;
 }
 
+@media (max-width: 990px) {
+  #about .about-par {
+    text-align: center !important;
+  }
+}
+
 #about .about-par p {
   font-size: 25px;
   line-height: 2;
 }
-
-/* #about .h1-color {
-    display: inline-block;
-    
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-  } */
 
 .featured-box {
   box-sizing: border-box;
@@ -358,8 +351,6 @@ span {
   font-weight: 600;
   color: #6c757d;
   line-height: 1;
-  /* padding-bottom: 8px;
-    border-bottom: solid 1px #6c757d; */
 }
 
 .about .info-group > p {
@@ -372,7 +363,6 @@ span {
 /* --------------- Service ----------------- */
 .service {
   background-color: #f8f9fa;
-  /* background-color: #fff; */
 }
 
 .service .nopadding {
@@ -396,7 +386,6 @@ span {
 
 .service .service-cont:hover {
   color: #3498db;
-  /* border: solid 1px #3498db; */
   box-shadow: 0px 10px 15px 10px #a4a7aa70;
   transition: all 0.9s ease;
 }
@@ -525,7 +514,6 @@ span {
   color: #4d555a;
   margin: 0px 4px 8px 4px;
   padding: 8px 20px 10px 20px;
-  /* border-bottom: solid 2px #3498db; */
   position: relative;
 }
 
@@ -559,8 +547,6 @@ span {
   transition: all 0.5s ease-in-out;
 }
 .protfolio .portfolio-box:hover img {
-  /* filter: blur(1px);
-    -webkit-filter: blur(1px); */
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
 }
@@ -574,7 +560,6 @@ span {
   top: 0;
   bottom: 0;
   z-index: 2;
-  /* visibility: hidden; */
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -678,6 +663,13 @@ span {
   background-color: #f8f9fa;
 }
 
+@media (max-width: 990px) {
+  .faq .section-header {
+    text-align: center !important;
+    width: 100%;
+  }
+}
+
 #FAQ .accordion .card {
   border: none;
   display: block;
@@ -734,17 +726,17 @@ span {
 
 .testimonial .mySwiper .swiper-slide {
   padding: 40px 80px;
+  margin: auto;
 }
 
 .testimonial .mySwiper .swiper-slide i {
-  font-size: 70px;
+  font-size: 50px;
   color: #3498db;
 }
 
 .testimonial .mySwiper .testimonial-cont {
   background-color: #f8f9fa;
   border-radius: 20px;
-  /* box-shadow: 0px 10px 15px #6c757d; */
   padding: 20px;
   margin-bottom: 10px;
 }
@@ -752,8 +744,9 @@ span {
 .testimonial .mySwiper .testimonial-cont img {
   border-radius: 50%;
   box-shadow: 0px 10px 15px #6c757d;
-  width: 80%;
+  width: 110px;
   align-self: center;
+  margin-bottom: 15px;
 }
 
 .testimonial .mySwiper .testimonial-cont .client-name {
@@ -767,13 +760,12 @@ span {
   color: #6c757d;
   font-size: 14px;
   font-weight: 500;
-  text-align: center;
 }
 
 .testimonial .mySwiper .testimonial-cont p {
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 600;
   color: #4d555a;
-  text-align: left;
 }
 
 .testimonial .mySwiper .swiper-button-next,
@@ -904,6 +896,10 @@ span {
   border-bottom: 2px solid rgba(0, 0, 0, 0.993);
 }
 
+.contact .contact-form .btn-container {
+  padding-top: 15px;
+}
+
 .contact .contact-form button.submit {
   background-color: #3b3b3b;
   color: #fff;
@@ -918,6 +914,26 @@ span {
   margin: 0 !important;
 }
 
+@media (max-width: 990px) {
+  .contact .contact-info {
+    text-align: center !important;
+  }
+
+  .contact .contact-form h2 {
+    text-align: center !important;
+    margin-top: 25px;
+  }
+
+  .contact .contact-info .icon-link {
+    justify-content: center !important;
+  }
+
+  .contact .contact-form .btn-container {
+    display: block;
+    margin: auto;
+  }
+}
+
 /* ------------- footer ---------------- */
 .footer-secation {
   padding: 50px 0px;
@@ -929,8 +945,7 @@ span {
 }
 
 @media (max-width: 990px) {
-
   .footer-secation .col-lg-6 {
-    text-align: center;
+    text-align: center !important;
   }
 }

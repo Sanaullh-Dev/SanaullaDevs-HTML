@@ -19,6 +19,10 @@
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate/animate.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" /> -->
+
 
     <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
     <!-- <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
@@ -67,9 +71,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 order-1 order-lg-2 profile-img">
-                    <img class="img-fluid" src="./assets/Sanaulla-shaikh.jpg" alt="">
+                    <img class="img-fluid" src="./assets/Sanaulla-shaikh.jpg" alt="" data-aos="zoom-in">
                 </div>
-                <div class="col-lg-6 order-2 order-lg-1 profile-info d-flex flex-column justify-content-center">
+                <div class="col-lg-6 order-2 order-lg-1 profile-info d-flex flex-column justify-content-center"
+                    data-aos="fade-up">
                     <h2>Hi, I'm freelancer </h2>
                     <h1><span class="typed" data-typed-items="Designer, Developer, Sanaulla"></span>
                     </h1>
@@ -95,15 +100,18 @@
     <!-- ======= Main ======= -->
     <div id="main">
 
+        <h2 class="animated slideInLeft" style="animation-delay:1s">Your ultimate Solution</h2>
+
+
         <!-- --------------- About Me --------------- -->
         <section id="about" class="about">
             <div class="container text-center">
-                <header class="section-header">
+                <header class="section-header" data-aos="fade-up">
                     <span>About me</span>
                     <p>Know Me more</p>
                 </header>
                 <div class="row">
-                    <div class="col-lg-8 text-left about-par">
+                    <div class="col-lg-8 text-left about-par" data-aos="fade-up" data-aos-delay="400">
                         <h3>Hi, I'm <span>Sanaulla Shaikh</span></h3>
                         <p>
                             I'm a designer & developer with a passion for web design. I enjoy developing simple, clean
@@ -114,10 +122,10 @@
                             requirements is our moto.
                         </p>
                     </div>
-                    <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="600">
                         <div class="featured-box ">
                             <div class="featured-box-icon">
-                                <h4>+5</h4>
+                                <h4 class="animate__animated animate__bounceIn" style="animation-delay:1s">+5</h4>
                             </div>
                             <p>More than <span>Project work</span></p>
                         </div>
@@ -593,11 +601,11 @@
                     <div class="col-lg-10 col-md-12 m-auto">
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide d-flex justify-content-center">
+                                <div class="swiper-slide d-flex align-items-center  justify-content-center">
                                     <div class="row testimonial-cont">
-                                        <div class="col-lg-8">
-                                            <p>
-                                                <i class='bx bxs-quote-left'></i>
+                                        <div class="col-lg-12 text-left">
+                                            <p class="text-center">
+                                                <i class='bx bxs-quote-alt-left'></i>
                                                 We have been very happy with our new website! It looks professional and
                                                 very
                                                 easy to navigate. Our experience with the customer service at Thrive has
@@ -605,59 +613,67 @@
                                                 great. They handle
                                                 things very efficiently and are available for any questions we have.
                                                 <br>
+                                            </p>
                                         </div>
-                                        <div class="col-lg-4 d-flex flex-column justify-content-center text-center">
+                                        <div class="col-lg-12 d-flex flex-column justify-content-center text-center">
                                             <img src="assets/tesimonial/testimonial-3.png" alt=""
-                                                class="img-fluid client-photo mt-3">
-                                            <h4 class="client-name mt-3">Person Name1</h4>
-                                            <p class="client-des">Founder of Company Name</p>
+                                                class="img-fluid client-photo">
+                                            <div class="float-center">
+                                                <h4 class="client-name">Person Name1</h4>
+                                                <p class="client-des">Founder of Company Name</p>
+                                            </div>
                                         </div>
-                                        
                                     </div>
 
                                 </div>
 
-                                <div class="swiper-slide d-flex justify-content-center">
+                                <div class="swiper-slide d-flex align-items-center justify-content-center">
                                     <div class="row testimonial-cont">
-                                        <div class="col-4 d-flex flex-column justify-content-center text-center">
-                                            <img src="assets/tesimonial/testimonial-2.png" alt=""
-                                                class="img-fluid client-photo mt-3">
-                                            <h4 class="client-name mt-3">Person Name1</h4>
-                                            <p class="client-des">Founder of Company Name</p>
-                                        </div>
-                                        <div class="col-8">
-                                            <p>
-                                                <i class='bx bxs-quote-left'></i>
+                                        <div class="col-lg-12 text-left">
+                                            <p class="text-center">
+                                                <i class='bx bxs-quote-alt-left'></i>
                                                 Sanaullah heard all we needed and wanted on the new website, then
                                                 delivered it! Our new website is fun, exciting and easy to use for me
                                                 and our audiences. I have gone
                                                 through website redesigns before, and by far, this one was the easiest
                                                 and least painful.
+                                                <br>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-12 d-flex flex-column justify-content-center text-center">
+                                            <img src="assets/tesimonial/testimonial-2.png" alt=""
+                                                class="img-fluid client-photo">
+                                            <div class="float-center">
+                                                <h4 class="client-name">Person Name 2</h4>
+                                                <p class="client-des">Founder of Company Name</p>
+                                            </div>
                                         </div>
                                     </div>
 
                                 </div>
 
-                                <div class="swiper-slide d-flex justify-content-center">
+                                <div class="swiper-slide d-flex align-items-center  justify-content-center">
                                     <div class="row testimonial-cont">
-                                        <div class="col-4 d-flex flex-column justify-content-center text-center">
-                                            <img src="assets/tesimonial/testimonial-1.png" alt=""
-                                                class="img-fluid client-photo mt-3">
-                                            <h4 class="client-name mt-3">Person Name1</h4>
-                                            <p class="client-des">Founder of Company Name</p>
-                                        </div>
-                                        <div class="col-8">
-                                            <p>
-                                                <i class='bx bxs-quote-left'></i>
+                                        <div class="col-lg-12 text-left">
+                                            <p class="text-center">
+                                                <i class='bx bxs-quote-alt-left'></i>
                                                 We at Kee Service were very impressed with the all aspects of our new
                                                 website. We would highly reccomend Thrive to anyone looking to build a
                                                 new website.
+                                                <br>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-12 d-flex flex-column justify-content-center text-center">
+                                            <img src="assets/tesimonial/testimonial-1.png" alt=""
+                                                class="img-fluid client-photo">
+                                            <div class="float-center">
+                                                <h4 class="client-name">Person Name 3</h4>
+                                                <p class="client-des">Founder of Company Name</p>
+                                            </div>
                                         </div>
                                     </div>
 
                                 </div>
-
-
 
                             </div>
 
@@ -725,7 +741,7 @@
                                 <label class="mb-2" for="Textarea1">How can I Help you?:</label>
                                 <textarea class="form-control" id="Textarea1" rows="3"></textarea>
                             </div>
-                            <div>
+                            <div class="btn-container">
                                 <button type="submit" class="btn submit rounded-0 d-flex">
                                     Submit
                                     <!-- <i class='bx bx-right-arrow-alt'></i> -->
