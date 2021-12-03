@@ -219,9 +219,10 @@ span {
 }
 
 .hero .profile-img img {
+  background-color: #fff;
   width: 80%;
   border-radius: 50%;
-  border: 15px solid rgb(255, 255, 255);
+  border: 15px solid rgb(206, 205, 205);
   box-shadow: 0px 5px 25px rgba(254, 254, 255, 0.37);
 }
 
@@ -330,6 +331,13 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 .featured-box .featured-box-icon h4 {
