@@ -72,8 +72,6 @@ $(function () {
       var top = $(this).offset().top,
         bottom = top + $(this).outerHeight() - 40;
 
-      // console.log("Current Position: " + current_pos);
-
       if (current_pos >= top && current_pos <= bottom) {
         if (current_pos <= bottom) {
           main_nav.find("li").removeClass('active');
@@ -85,8 +83,17 @@ $(function () {
         $(".nav-menu li:first").addClass('active');
       }
 
-    })
+    });
   });
+
+
+  // ------ mobile menu button ---------
+  $('#mobile-menu').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('is-active');
+    $('.nav-menu').toggleClass('active');
+});
+
 
 
   // ------- Stick menubar on top ------------ 
