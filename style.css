@@ -35,14 +35,26 @@ span {
   font-family: 'Lato', sans-serif;
 }
 
+/* ================ Header ====================== */
+
 #header {
-  padding: 8px 0;
-  transition: all 0.5s ease;
-  position: fixed;
-  z-index: 997;
-  transition: all 0.5s;
-  background-color: white;
+  padding: 10px 0;
+  background-color: rgb(247, 247, 247);
   box-shadow: 0px 2px 20px rgba(77, 98, 134, 0.1);
+  z-index: 997;
+  width: 100%;
+}
+
+#header.header-scrolled {
+  top: 0;
+  left: 0;
+  position: fixed;
+  animation: slideInDown;
+  animation-duration: 1s;
+}
+
+#header .nav-container {
+  width: 100%;
 }
 
 #header .logo .title {
@@ -67,13 +79,10 @@ span {
   white-space: nowrap;
 }
 
-.menu-bar {
-  width: 70%;
-  padding: 0 20px;
-  padding-left: 25px;
+#header .menu-bar {
 }
 
-.menu-bar > ul {
+#header .menu-bar > ul {
   display: flex;
   flex-wrap: nowrap;
   margin: auto;
@@ -85,12 +94,12 @@ span {
   list-style: none;
 }
 
-.menu-bar > ul > li {
+#header .menu-bar > ul > li {
   white-space: nowrap;
   position: relative;
 }
 
-.menu-bar li a {
+#header .menu-bar li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,15 +160,28 @@ span {
 #header .mobile-menu {
   display: flex;
   align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#header .mobile-menu i {
+  font-size: 50px;
+  background-color: rgba(219, 218, 218, 0.356);
+  border-radius: 5px;
+  padding: 3px;
 }
 
 @media (max-width: 990px) {
-  #header .menu-bar {
-    visibility: hidden;
+  #header .mobile-menu {
+    visibility: visible;
+    opacity: 1;
+    /* position: absolute; */
   }
 
-  #header .mobile-menu i {
-    font-size: 30px;
+  #header .menu-bar {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
   }
 }
 
@@ -207,7 +229,7 @@ span {
 
 .hero .btn-container .btn-works {
   background-color: #000;
-  box-shadow: 0px 5px 25px rgba(254, 254, 255, 0.37);
+  box-shadow: 0px 5px 25px rgb(254, 254, 255);
 }
 
 .hero .btn-container .btn-contact i {
@@ -223,7 +245,7 @@ span {
   background-color: #fff;
   width: 80%;
   border-radius: 50%;
-  border: 15px solid rgb(206, 205, 205);
+  border: 15px solid rgb(255, 255, 255);
   box-shadow: 0px 5px 25px rgba(254, 254, 255, 0.37);
 }
 

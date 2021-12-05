@@ -1,41 +1,16 @@
-(function () {
-  "use strict";
+$(function () {
+
 
   function aos_init() {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      once: true,
-      mirror: false
+      once: true
     });
   }
 
-  // ------ Navigation active state on scroll -------------
-  var nav_sections = $('section');
-  var main_nav = $('.nav-menu');
-
-  $(window).on('scroll', function () {
-    var current_pos = $(this).scrollTop();
-
-    nav_sections.each(function () {
-      var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight() - 40;
-
-      console.log("Current Position: " + current_pos);
-
-      if (current_pos >= top && current_pos <= bottom) {
-        if (current_pos <= bottom) {
-          main_nav.find("li").removeClass('active');
-          // console.log("Is on remove active");
-        }
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
-      }
-      if (current_pos == 40) {
-        $('html, body').scrollTop(0);
-        $(".menu-bar ul li:first").addClass('active');
-      }
-
-    })
+  $(document).ready(function () {
+    aos_init();
   });
 
 
@@ -69,16 +44,6 @@
     });
   }
 
-  /** * Animation on scroll */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
-  });
-
 
   // ---------- Testimonial swiper --------------
   var swiper = new Swiper(".mySwiper", {
@@ -96,5 +61,44 @@
   });
 
 
+  // ------ Navigation active state on scroll -------------
+  var nav_sections = $('section');
+  var main_nav = $('.nav-menu');
 
-})()
+  $(window).on('scroll', function () {
+    var current_pos = $(this).scrollTop() + 150;
+
+    nav_sections.each(function () {
+      var top = $(this).offset().top,
+        bottom = top + $(this).outerHeight() - 40;
+
+      // console.log("Current Position: " + current_pos);
+
+      if (current_pos >= top && current_pos <= bottom) {
+        if (current_pos <= bottom) {
+          main_nav.find("li").removeClass('active');
+        }
+        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+      }
+      if (current_pos == 40) {
+        $('html, body').scrollTop(0);
+        $(".nav-menu li:first").addClass('active');
+      }
+
+    })
+  });
+
+
+  // ------- Stick menubar on top ------------ 
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('#header').addClass('header-scrolled');
+    } else {
+      $('#header').removeClass('header-scrolled');
+    }
+  });
+
+
+
+
+});
