@@ -37,14 +37,18 @@
     <header id="header" class="sticky-top-slide">
         <div class="container p-0">
             <div class="nav-container d-flex align-content-center justify-content-between">
-                <div class="logo d-flex align-items-center">
+                <a class="logo d-flex align-items-center" href="#">
                     <img src="../assets/logo.png" alt="Logo">
                     <h1 class="title">Sanaulla</h1>
+                </a>
+
+                <div class="menu-toggle mobile-icon">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
                 </div>
 
-                <nav id="menu-bar" class="menu-bar d-flex justify-content-between">
+                <nav id="menu-bar" class="menu-bar d-flex flex-row-reverse">
                     <ul class="nav-menu">
-                        <li class="active"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="active"><a class="nav-link" href="#Home">Home</a></li>
                         <li><a class="nav-link" href="#About">About</a></li>
                         <li><a class="nav-link" href="#Services">Services</a></li>
                         <li><a class="nav-link" href="#Resume">Resume</a></li>
@@ -54,17 +58,19 @@
                     </ul>
                 </nav>
 
-
-                <div class="menu-toggle d-flex align-items-center" id="mobile-menu">
-                    <div class="mobile-icon">
-                        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                    </div>
-
-                    <div class="social-media pl-3">
+                <div class="social-media pl-3">
+                    <a href="http://www.facebook.com/softDevs.in" data-toggle="tooltip" data-placement="bottom"
+                        title="Facebook">
                         <i class='bx bxl-facebook-circle'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sanaulla-dev/" data-toggle="tooltip" data-placement="bottom"
+                        title="Linkedin">
                         <i class='bx bxl-linkedin'></i>
+                    </a>
+
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook">
                         <i class="bx bxl-twitter"></i>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -73,7 +79,7 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="hero d-flex align-items-center">
+    <section id="Home" class="hero d-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 order-1 order-lg-2 profile-img">
@@ -166,23 +172,43 @@
                     <span>What I Do?</span>
                     <p>How I can help your next project</p>
                 </header>
-                <div class="row ">
-                    <div class="col-lg-4 col-md-6 nopadding" data-aos="fade-up" data-aos-delay="600">
+
+
+                <div class="row row-eq-height">
+                    <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="600">
                         <div class="service-cont">
                             <i class='bx bxs-devices'></i>
                             <h4>Web Design</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, quasi.</p>
+                            <p>I am passionate about solving
+                                business problems through human-centered design. Curious by nature and
+                                business-minded. I create layouts that adjust to any type of screen size, desktop,
+                                tablet
+                                or mobile. </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 nopadding" data-aos="fade-up" data-aos-delay="600">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="service-cont">
                             <i class='bx bx-spreadsheet'></i>
                             <h4>Web Development</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, quasi.</p>
+                            <p>I am professional website developer and designer, having passable knowledge on different
+                                web programming languages. I am responsible, understand the importance of deadlines and
+                                manage them well.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 nopadding" data-aos="fade-up" data-aos-delay="600">
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-cont">
+                            <i class='bx bx-trophy'></i>
+                            <h4>Logo Design</h4>
+                            <p>Also I am making Logo for your business like professional. If you looking for creating
+                                Our Brand in market than you wants logo. This is describing your company and your
+                                vision. I am logo delivered for many client like campaign, business, contest.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="service-cont">
                             <i class='bx bxs-palette'></i>
                             <h4>Graphic Design</h4>
@@ -190,15 +216,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 nopadding" data-aos="fade-up" data-aos-delay="600">
-                        <div class="service-cont">
-                            <i class='bx bx-trophy'></i>
-                            <h4>Logo Design</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, quasi.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 nopadding" data-aos="fade-up" data-aos-delay="600">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="service-cont">
                             <i class='bx bxs-megaphone'></i>
                             <h4>Digital Marketing</h4>
@@ -206,13 +224,13 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 nopadding" data-aos="fade-up" data-aos-delay="600">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="service-cont">
                             <i class='bx bxl-android'></i>
                             <h4>App Development</h4>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, quasi.</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -400,8 +418,13 @@
                                 <h4>Project Name</h4>
                                 <p>Sub Title about Project</p>
                                 <div class="protfolio-links">
-                                    <!-- <a href="#"><i class='bx bx-plus-circle'></i></a>
-                      <a href="#"><i class='bx bx-link'></i></a> -->
+                                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                                        <i class='bx bx-plus-circle'></i>
+                                    </a>
+                                    <a href="#"><i class='bx bx-link'></i></a>
+
+                                    <!-- Button trigger modal -->
+
                                 </div>
                             </div>
                         </div>
@@ -477,6 +500,28 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -697,7 +742,7 @@
         <section id="Contact" class="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 contact-info" data-aos="fade-up" data-aos-delay="400">
+                    <div class="col-lg-6 col-md-12 contact-info pt-3" data-aos="fade-up" data-aos-delay="400">
                         <h2 class="fw-bolder">Let's get touch</h2>
                         <p>I enjoy discussing new projects and design challenges. Please share as much info, as possible
                             so we can get the most out of our first catch-up.</p>
@@ -730,7 +775,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-12 contact-form" data-aos="fade-up" data-aos-delay="600">
+                    <div class="col-lg-6 col-md-12 contact-form pt-3" data-aos="fade-up" data-aos-delay="600">
                         <h2 class="fw-bolder mb-4">Estimate your Project?</h2>
                         <form class="d-flex flex-column justify-content-start">
                             <div class="form-group mb-3">
@@ -791,7 +836,7 @@
     <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script> -->
 
 
     <!-- Template Main JS File -->

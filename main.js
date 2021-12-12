@@ -88,11 +88,11 @@ $(function () {
 
 
   // ------ mobile menu button ---------
-  $('#mobile-menu').click(function (e) {
+  $('.mobile-icon').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('is-active');
     $('.nav-menu').toggleClass('active');
-});
+  });
 
 
 
