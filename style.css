@@ -190,11 +190,6 @@ span {
   width: 0;
 }
 
-/* display: flex;
-  margin: auto;
-  margin-right: 0;
-  flex-direction: column; */
-
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
@@ -310,14 +305,14 @@ span {
 }
 
 .hero h2 {
-  font-size: calc(0.9rem + 2.1vw) !important;
+  font-size: calc(0.8rem + 2vw) !important;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .hero h1 {
-  font-size: calc(1rem + 6.3vw) !important;
+  font-size: calc(1rem + 6vw) !important;
   font-weight: bolder;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -342,6 +337,13 @@ span {
 .hero .btn-container .btn-works {
   background-color: #000;
   box-shadow: 0px 5px 25px rgba(27, 27, 27, 0.445);
+  transition: all 0.3s ease-in;
+}
+
+.hero .btn-container .btn-works:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease-in-out;
 }
 
 .hero .btn-container .btn-contact i {
@@ -763,6 +765,23 @@ span {
   opacity: 1;
   transition: all 0.7s ease-in-out;
 }
+
+/* ----------------- Model box ------------------ */
+
+/* .mfp-close,
+.mfp-close-btn-in .mfp-close {
+  background-color: red;
+  opacity: 1;
+  color: #fff;
+  border-radius: 32px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  line-height: 1;
+  top: 12px;
+  right: 12px;
+  transition: 150ms;
+} */
 
 /* ---------Hire me --------------- */
 .hire-me {

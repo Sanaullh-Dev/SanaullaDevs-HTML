@@ -108,4 +108,41 @@ $(function () {
 
 
 
+  $('.simple-ajax-popup-align-top').magnificPopup({
+    type: 'ajax',
+    alignTop: true,
+    mainClass: 'mfp-fade',
+    overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+  });
+
+  $('.simple-ajax-popup').magnificPopup({
+    type: 'ajax'
+  });
+
+
+
+  $('.open-popup').magnificPopup({
+    type: 'inline',
+    mainClass: 'mfp-with-zoom',
+    // Fixed position will be used
+    fixContentPos: true,
+
+    // Since disabled, Magnific Popup
+    // will not put close button
+    // inside content of popup
+    closeBtnInside: false,
+    preloader: false,
+
+    // Delay in milliseconds before
+    // popup is removed
+    removalDelay: 160,
+
+    // Class that is added to
+    // popup wrapper and background
+    mainClass: 'mfp-fade'
+  });
+
+
+
+
 });

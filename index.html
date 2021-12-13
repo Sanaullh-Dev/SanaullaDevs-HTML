@@ -20,6 +20,7 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendor/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" /> -->
 
@@ -87,7 +88,7 @@
                 </div>
                 <div class="col-lg-6 order-2 order-lg-1 profile-info d-flex flex-column justify-content-center"
                     data-aos="fade-up">
-                    <h2>Hi, I'm freelancer </h2>
+                    <h2>Hi, I'm Web Developer</h2>
                     <h1><span class="typed" data-typed-items="Designer, Developer, Sanaulla"></span>
                     </h1>
                     <h4>Based in Maharashtra , India</h4>
@@ -175,7 +176,7 @@
 
 
                 <div class="row row-eq-height">
-                    <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="600">
+                    <div class="col-lg-4 col-md-12 " data-aos="fade-up" data-aos-delay="600">
                         <div class="service-cont">
                             <i class='bx bxs-devices'></i>
                             <h4>Web Design</h4>
@@ -186,7 +187,7 @@
                                 or mobile. </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="600">
                         <div class="service-cont">
                             <i class='bx bx-spreadsheet'></i>
                             <h4>Web Development</h4>
@@ -198,7 +199,7 @@
                     </div>
 
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="600">
                         <div class="service-cont">
                             <i class='bx bx-trophy'></i>
                             <h4>Logo Design</h4>
@@ -291,7 +292,7 @@
                                     design.
                             </div>
                             <div class="point-box">
-                                <h2>Sr. Software Developer in .Net</h2>
+                                <h2>Jr. Software Developer in .Net</h2>
                                 <span>Ideal Software Solution / 2 Year</span>
                                 <p>
                                     Effective utilize front-end development with client-side validation, middle-tier
@@ -300,7 +301,7 @@
                                     requirement.</p>
                             </div>
                             <div class="point-box">
-                                <h2>Sr. Software Developer in .Net</h2>
+                                <h2>Jr. Software Developer in .Net</h2>
                                 <span>Ideal Software Solution / 2 Year</span>
                                 <p>
                                     Effective utilize front-end development with client-side validation, middle-tier
@@ -418,7 +419,7 @@
                                 <h4>Project Name</h4>
                                 <p>Sub Title about Project</p>
                                 <div class="protfolio-links">
-                                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                                    <a href="#test-popup" class="open-popup" data-effect="mfp-zoom-in">
                                         <i class='bx bx-plus-circle'></i>
                                     </a>
                                     <a href="#"><i class='bx bx-link'></i></a>
@@ -501,26 +502,6 @@
                     </div>
                 </div>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <!-- <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </section>
@@ -806,8 +787,25 @@
         </section>
     </div><!-- End Main -->
 
+    <!-- Popup itself -->
+    <div id="test-popup" class="white-popup mfp-with-anim mfp-hide">You may put any HTML here. This is dummy
+        copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of
+        finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.
+    </div>
+
+
+    <div class="example gc3">
+        <h3>Ajax popup</h3>
+        <p>You have full control of what is displayed in popup, align it to any side via CSS, enable or disable scroll on right side of window - whatever.</p>
+        <div class="html-code">
+          <a class="simple-ajax-popup-align-top" href="test-ajax.html" >Load content via ajax</a><br/>
+          <a class="simple-ajax-popup" href="site-assets/ajax/test-ajax-2.html" >Load another content via ajax</a>
+        </div>
+
+
+
     <!-- --------------- Footer --------------- -->
-    <footer id="footer" class="footer-secation bg-dark text-white">
+    <footer id="footer" class="mfp-hide" class="footer-secation bg-dark text-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -832,6 +830,7 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendor/typed.js/typed.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
@@ -852,3 +851,4 @@
 <!-- http://demo.harnishdesign.net/?theme=Callum%20HTML -->
 
 <!-- http://demo.harnishdesign.net/html/callum/index-standard-menu.html -->
+
