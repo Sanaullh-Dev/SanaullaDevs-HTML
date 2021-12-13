@@ -168,17 +168,21 @@ span {
 #header .social-media a i:hover {
   transform: scale(1.2);
 }
-#header .social-media a i:hover.bxl-facebook-circle {
+i:hover.bxl-facebook-circle {
   color: #3b5998;
 }
 
-#header .social-media a i:hover.bxl-twitter {
+i:hover.bxl-twitter {
   color: #1da1f2;
 }
 
-#header .social-media a i:hover.bxl-linkedin {
+i:hover.bxl-linkedin {
   color: #2867b2;
 }
+
+i:hover.bxl-linkedin-square {
+  color: #ffc0cb;
+} 
 
 #header .menu-toggle {
   visibility: hidden;
@@ -747,6 +751,7 @@ span {
 }
 
 .protfolio .portfolio-box .protfolio-info .protfolio-links a {
+  text-decoration: none;
   font-size: 35px;
   font-family: 600;
   color: #fff;
@@ -1112,4 +1117,95 @@ span {
   .footer-secation .col-lg-6 {
     text-align: center !important;
   }
+}
+
+
+
+/* ------------- popup dialog --------------- */
+.white-popup-block {
+  position: relative;
+  max-width:85%; 
+  background-color: #fff; 
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.white-popup-block h4 {
+  font-weight: 600;
+}
+
+.white-popup-block .popup-title {
+  font-weight: 600;
+  font-size: 25px;
+  padding: 15px 0;
+}
+
+.white-popup-block .project-point {
+  list-style: none;
+}
+
+.white-popup-block .project-point li {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.151);
+  padding: 10px 0px;
+}
+
+.white-popup-block .project-point li:last-child {
+  border: none;
+}
+
+.white-popup-block .project-point span {
+  font-weight: 600;
+}
+.white-popup-block p {
+  font-size: 16px;
+  font-weight: 450;
+}
+
+.white-popup-block .project-link {
+  background-color: #3498db;
+  padding: 8px 10px;
+  color: #fff;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 17px;
+  margin-left: 10px;
+  letter-spacing: 0.5px;
+}
+
+.white-popup-block i {
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+.mfp-close {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+  text-align: center;
+  opacity: .65;
+  padding: 0 0 18px 10px;
+  color: rgb(255, 230, 0);
+  font-style: normal;
+  font-size: 28px;
+  font-family: Arial, Baskerville, monospace;
+}
+
+button.mfp-close {
+  overflow: visible;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  -webkit-appearance: none;
+  display: block;
+  outline: 0;
+  padding: 0;
+  z-index: 1046;
+  box-shadow: none;
+  touch-action: manipulation;
 }
