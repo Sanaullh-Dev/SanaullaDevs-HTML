@@ -50,6 +50,10 @@ $(function () {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -59,6 +63,8 @@ $(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
 
 
   // ------ Navigation active state on scroll -------------
@@ -77,6 +83,8 @@ $(function () {
           main_nav.find("li").removeClass('active');
         }
         main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+        $(".mobile-icon").removeClass('is-active');
+        $('.nav-menu').removeClass('active');
       }
       if (current_pos == 40) {
         $('html, body').scrollTop(0);
@@ -114,35 +122,6 @@ $(function () {
     mainClass: 'mfp-fade',
     overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
   });
-
-  $('.simple-ajax-popup').magnificPopup({
-    type: 'ajax'
-  });
-
-
-
-  $('.open-popup').magnificPopup({
-    type: 'inline',
-    mainClass: 'mfp-with-zoom',
-    // Fixed position will be used
-    fixContentPos: true,
-
-    // Since disabled, Magnific Popup
-    // will not put close button
-    // inside content of popup
-    closeBtnInside: false,
-    preloader: false,
-
-    // Delay in milliseconds before
-    // popup is removed
-    removalDelay: 160,
-
-    // Class that is added to
-    // popup wrapper and background
-    mainClass: 'mfp-fade'
-  });
-
-
 
 
 });
