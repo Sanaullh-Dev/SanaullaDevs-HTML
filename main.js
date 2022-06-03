@@ -99,7 +99,7 @@ $(function () {
   $('.mobile-icon').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('is-active');
-    $('.nav-menu').toggleClass('active');
+    $('.menu-bar').toggleClass('active');
   });
 
 
